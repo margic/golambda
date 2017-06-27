@@ -1,0 +1,27 @@
+hash: 55f5e46783601f18abc7d18fa19d39a99be7ec600a0b86b5a37363c4d69b6d61
+updated: 2017-06-27T12:14:40.828679333-07:00
+imports:
+- name: github.com/eawsy/aws-lambda-go-core
+  version: e26eed6aa244a3d45aa693816a9c5faf39390fcd
+  subpackages:
+  - service/lambda/runtime
+- name: github.com/eawsy/aws-lambda-go-event
+  version: a318481f661f091bafea408f9967cb1ac5bf8905
+  subpackages:
+  - service/lambda/runtime/event/apigatewayproxyevt
+- name: github.com/eawsy/aws-lambda-go-net
+  version: 5cad5da09c21a3c50ee9aca7a211eb6c69a6049b
+  subpackages:
+  - service/lambda/runtime/net
+  - service/lambda/runtime/net/apigatewayproxy
+- name: github.com/gorilla/context
+  version: 08b5f424b9271eedf6f9f0ce86cb9396ed337a42
+- name: github.com/gorilla/mux
+  version: bcd8bc72b08df0f70df986b97f95590779502d31
+- name: github.com/Sirupsen/logrus
+  version: 202f25545ea4cf9b191ff7f846df5d87c9382c2b
+- name: golang.org/x/sys
+  version: 90796e5a05ce440b41c768bd9af257005e470461
+  subpackages:
+  - unix
+testImports: []

@@ -1,0 +1,20 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: pcrofts/bg-lambda-deploy:latest
+        environment:
+          GOPATH: /tmp/go
+    
+    working_directory: /tmp/go/src/github.com/margic/golambda
+    
+    branches:
+      only:
+        - master 
+    steps:
+      - checkout
+      - run: glide install
+      - run: make all
+    
+      - deploy:
+          command: make deploy
